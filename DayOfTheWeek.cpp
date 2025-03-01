@@ -28,25 +28,30 @@ int main () {
         dayValue = 2;
     } else if (day == friday) {
         dayValue = 3;
-    } else (day == saturday || day == sunday) {
+    } else if (day == saturday || day == sunday) {
         dayValue = 4;
+    } else {
+        dayValue = 0;
     }
 
     switch(dayValue) {      //compares day value assigned and outputs appropriate response
         case(1):
-            cout << "It's a weekday!";
+            cout << "It's a weekday!\n";
             break;
         
         case(2):
-            cout << "Hump day!";
+            cout << "Hump day!\n";
             break;
         
         case(3):
-            cout << "TGIF!";
+            cout << "TGIF!\n";
             break;
         
         case(4):
-            cout << "It's the weekend!";
+            cout << "It's the weekend!\n";
+            break;
+        default:
+            cout << "Invalid entry. \n";
             break;
     }
     
